@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amir Davari</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-image: url(./back.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .title{
+        text-align: center;
+        margin-top: 0.4rem;
+      }
+      .title h6{
+        padding: 0.2rem 0.4rem;
+        font-size: 1.8rem;
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+      .parent-entry{
+        margin: 10px auto 0 auto;
+        width: 60%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .enter-city{
+        width:60% ;
+        margin-left: 0.8rem;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+      }
+      .btn{
+        margin-right: 0.2rem;
+        width: 100px;
+        cursor: pointer;
+      }
+      .enter-city,.btn{
+        height: 40px;
+        border-radius: 0.4rem;
+        border: 0;
+        outline: 0;
+        padding: 0.1rem 0.3rem;
+        letter-spacing: 0.1rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+      } 
+      .btn:hover{
+        background-color: black;
+        color: white;
+        transform: scale(0.9,0.9);
+        transition: 0.2s all ease-in-out;
+      }
+      .wapper{
+        background-color: rgba(0, 0, 0, 0.274);
+        backdrop-filter: blur(0.4rem);
+        -webkit-backdrop-filter: blur(0.4rem);
+        width: 300px;
+        margin:5rem auto 0 auto;
+        border-radius: 0.9rem 1.4rem;
+        overflow: hidden;
+      }
+      .city-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+      }
+      .city-info h5{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        font-family: monospace;
+        border-bottom: 0.4rem solid white;
+      }
+      .date-parent{
+        margin-top: 0.4rem;
+        font-size: 1.4rem;
+        font-family: monospace;
+        color: white;
+      }
+      .weather{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        margin:1rem auto;
+        padding: 0.8rem 1.6rem;
+        color: white;
+      }
+      .weather h5{
+        font-family: monospace;
+        font-size: 2rem;
+      }
+      .desc-weather{
+        font-family: sans-serif;
+        font-size: 1.2rem;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h6>
+        Weather
+      </h6>
+    </div>
+    <div class="parent-entry">
+      <button class="btn">Search</button>
+      <input placeholder="Enter Your City" type="text" class="enter-city">
+    </div>
+    <div class="wapper">
+      
+    </div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
